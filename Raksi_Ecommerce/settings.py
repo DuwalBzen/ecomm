@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'store',
+    'phonenumber_field',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,6 +125,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
+# set image url path folder
 MEDIA_URL = '/images/'
 #Tell where you want to upload image path
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')

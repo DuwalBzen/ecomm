@@ -25,4 +25,5 @@ urlpatterns = [
      path('', include('store.urls')),
 ]
 
+#accessing image save by this setting
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

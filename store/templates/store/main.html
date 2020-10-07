@@ -14,7 +14,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{% url 'store' %}">Ecom</a>
+  <a class="navbar-brand" href="{% url 'store' %}">Hakukala</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,6 +26,14 @@
       </li>
 
     </ul>
+
+		<form class="form-inline my-2 my-lg-0" method="POST">
+			{% csrf_token %}
+      <input class="form-control mr-sm-2" name="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+		&nbsp&nbsp&nbsp&nbsp
+
     <div class="form-inline my-2 my-lg-0">
      	<a href="#"class="btn btn-warning">Login</a>
 
@@ -46,6 +54,18 @@
          </div>
 
 
+
+				 <!-- Footer -->
+				<footer class="page-footer font-small blue pt-4">
+
+				   <!-- Copyright -->
+				   <div class="footer-copyright text-center py-3">© 2020 Copyright:
+				     <a href="https://mdbootstrap.com/"> Hakukala Store</a>
+				   </div>
+				   <!-- Copyright -->
+
+				 </footer>
+				 <!-- Footer -->
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
